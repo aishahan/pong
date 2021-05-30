@@ -13,14 +13,13 @@ screen.title("PONG")
 screen.tracer(0)
 
 #create both paddles
-#make one platform listen to key strokes
-
 r_paddle = Paddle((350,0))
 l_paddle = Paddle((-350,0))
 ball = Ball()
 
 score = Score()
 
+#make paddles listen to key strokes
 screen.listen()
 screen.onkey(l_paddle.up,"Up")
 screen.onkey(l_paddle.down,"Down")
@@ -64,12 +63,3 @@ while game_is_on:
 
 screen.exitonclick()
 
-
-
-
-#detect collision of ball and platform
-
-#detect when paddle misses
-
-#track score everytime ball hits platform for either player
-#Score keeping
